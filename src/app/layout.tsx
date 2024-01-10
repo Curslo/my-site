@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SideBar } from "@/components/SideBar";
 import "./globals.css";
+import { NavBar } from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "Richards Hub",
@@ -18,7 +19,8 @@ export default function RootLayout({
         <div className="p-4 text-center rounded-2xl col-span-12 lg:col-span-3 bg-white">
           <SideBar />
         </div>
-        <div className="rounded-2xl col-span-12 lg:col-span-9 bg-white">
+        <div className="rounded-2xl col-span-12 lg:col-span-9 bg-white flex flex-col">
+          <NavBar/>
           {children}
         </div>
       </body>
