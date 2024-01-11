@@ -6,3 +6,16 @@ export interface IServices {
   about: string;
   Icon: IconType;
 }
+
+export interface IPersonalDetails {
+  id: number;
+  label: string;
+  content: string;
+}
+
+export interface ISkill {
+  id: number;
+  title: string;
+  level: string;
+  Icon:IconType
+}

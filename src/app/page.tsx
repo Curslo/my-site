@@ -21,7 +21,10 @@ export default function Home() {
         <div className="grid gap-4 lg:grid-cols-4">
           {Services.map((service) => (
             // eslint-disable-next-line react/jsx-key
-            <div key={service.id} className="lg:col-span-2 bg-gray-200 rounded-md">
+            <div
+              key={service.id}
+              className="lg:col-span-2 bg-gray-200 rounded-md"
+            >
               <ServiceCard service={service} />
             </div>
           ))}
