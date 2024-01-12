@@ -1,14 +1,32 @@
 import { MdCss, MdHtml, MdJavascript } from "react-icons/md";
-import { IPersonalDetails, ISkill } from "../types/page";
-import { FaAws, FaBootstrap, FaDigitalOcean, FaDocker, FaGit, FaGithub, FaNodeJs, FaNpm, FaReact, FaYarn } from "react-icons/fa";
-import { SiExpress, SiJest, SiMocha, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiRsocket, SiTailwindcss } from "react-icons/si";
+import { IExperience, IPersonalDetails, ISkill } from "../types/page";
+import {
+  FaAws,
+  FaBootstrap,
+  FaDigitalOcean,
+  FaDocker,
+  FaGit,
+  FaGithub,
+  FaNodeJs,
+  FaNpm,
+  FaReact,
+  FaYarn,
+} from "react-icons/fa";
+import {
+  SiExpress,
+  SiJest,
+  SiMocha,
+  SiMongodb,
+  SiMysql,
+  SiNestjs,
+  SiNextdotjs,
+  SiRsocket,
+  SiTailwindcss,
+} from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { LiaChairSolid } from "react-icons/lia";
 import { DiHeroku } from "react-icons/di";
-import {GrGraphQl} from 'react-icons/gr'
-
-
-
+import { GrGraphQl } from "react-icons/gr";
 
 export const personalDetails: IPersonalDetails[] = [
   {
@@ -49,7 +67,7 @@ export const personalDetails: IPersonalDetails[] = [
   },
 ];
 
-export const languages:ISkill[] = [
+export const languages: ISkill[] = [
   {
     id: 1,
     title: "Javascript",
@@ -70,7 +88,7 @@ export const languages:ISkill[] = [
   },
 ];
 
-export const frontend:ISkill[] = [
+export const frontend: ISkill[] = [
   {
     id: 1,
     title: "React.js",
@@ -97,7 +115,7 @@ export const frontend:ISkill[] = [
   },
 ];
 
-export const backend:ISkill[] = [
+export const backend: ISkill[] = [
   {
     id: 1,
     title: "Node.js",
@@ -118,7 +136,7 @@ export const backend:ISkill[] = [
   },
 ];
 
-export const versionControl:ISkill[] = [
+export const versionControl: ISkill[] = [
   {
     id: 1,
     title: "Git",
@@ -133,7 +151,7 @@ export const versionControl:ISkill[] = [
   },
 ];
 
-export const database:ISkill[] = [
+export const database: ISkill[] = [
   {
     id: 1,
     title: "MongoDb",
@@ -154,7 +172,7 @@ export const database:ISkill[] = [
   },
 ];
 
-export const packageManager:ISkill[] = [
+export const packageManager: ISkill[] = [
   {
     id: 1,
     title: "npm",
@@ -169,7 +187,7 @@ export const packageManager:ISkill[] = [
   },
 ];
 
-export const testing:ISkill[] = [
+export const testing: ISkill[] = [
   {
     id: 1,
     title: "Jest",
@@ -190,7 +208,7 @@ export const testing:ISkill[] = [
   },
 ];
 
-export const deployment:ISkill[] = [
+export const deployment: ISkill[] = [
   {
     id: 1,
     title: "Heroku",
@@ -217,7 +235,7 @@ export const deployment:ISkill[] = [
   },
 ];
 
-export const apis:ISkill[] = [
+export const apis: ISkill[] = [
   {
     id: 1,
     title: "Restful APIs",
@@ -229,5 +247,26 @@ export const apis:ISkill[] = [
     title: "Graphql",
     level: "70%",
     Icon: GrGraphQl,
+  },
+];
+
+export const workExperience:IExperience[] = [
+  {
+    id: 1,
+    companyName: "Lansan Technology",
+    jobTitle: "Fullstack Web Developer, Heavy Frontend",
+    startDate: "September 2023",
+    endDate: "Present",
+    responsibilities:
+      "<b> 1. User Interface Design:</b><br/>- Create visually appealing and responsive user interfaces.<br/>- Collaborate with UX designers to implement designs and wireframes.<br/> <b> 2. Web Development:</b><br/>- Develop and maintain web applications using HTML, CSS, and JavaScript.<br/>- Implement responsive design principles to ensure a seamless experience across various devices and screen sizes.<br/> <b>3. JavaScript Frameworks and Libraries:</b><br/>- Work with JavaScript frameworks and libraries such as React.js, Angular, or Vue.js to build dynamic and interactive user interfaces.<br/><b>4. Cross-Browser Compatibility:</b><br/>- Ensure compatibility across different browsers and devices by testing and debugging code.<br/><b>5. Performance Optimization:</b><br/>- Optimize the performance of web applications for faster loading times and improved user experience.<br/><b>6. Collaboration:</b><br/>- Collaborate with backend developers and other stakeholders to integrate frontend components with server-side logic.<br/><b>7. Version Control:</b><br/>- Use version control systems, such as Git, to manage and track changes in the codebase.<br/> <b>8. Testing:</b><br/>- Conduct unit testing and participate in code reviews to maintain code quality.<br/><b>9. Continuous Learning:</b><br/>- Stay updated on the latest trends and technologies in frontend development.<br/><b>10. Documentation:</b><br/>- Document code, processes, and best practices for future reference.",
+  },
+  {
+    id: 1,
+    companyName: "Lansan Technology",
+    jobTitle: "Fullstack web Developer, Intern",
+    startDate: "September 2022",
+    endDate: "August 2023",
+    responsibilities:
+      "<b> 1. User Interface Design:</b><br/>- Create visually appealing and responsive user interfaces.<br/>- Collaborate with UX designers to implement designs and wireframes.<br/> <b> 2. Web Development:</b><br/>- Develop and maintain web applications using HTML, CSS, and JavaScript.<br/>- Implement responsive design principles to ensure a seamless experience across various devices and screen sizes.<br/> <b>3. JavaScript Frameworks and Libraries:</b><br/>- Work with JavaScript frameworks and libraries such as React.js, Angular, or Vue.js to build dynamic and interactive user interfaces.<br/><b>4. Cross-Browser Compatibility:</b><br/>- Ensure compatibility across different browsers and devices by testing and debugging code.<br/><b>5. Performance Optimization:</b><br/>- Optimize the performance of web applications for faster loading times and improved user experience.<br/><b>6. Collaboration:</b><br/>- Collaborate with backend developers and other stakeholders to integrate frontend components with server-side logic.<br/><b>7. Version Control:</b><br/>- Use version control systems, such as Git, to manage and track changes in the codebase.<br/> <b>8. Testing:</b><br/>- Conduct unit testing and participate in code reviews to maintain code quality.<br/><b>9. Continuous Learning:</b><br/>- Stay updated on the latest trends and technologies in frontend development.<br/><b>10. Documentation:</b><br/>- Document code, processes, and best practices for future reference.",
   },
 ];

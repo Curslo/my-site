@@ -19,3 +19,12 @@ export interface ISkill {
   level: string;
   Icon:IconType
 }
+
+export interface IExperience {
+  id: number;
+  companyName: string;
+  jobTitle: string;
+  startDate: string;
+  endDate: string;
+  responsibilities: string;
+}

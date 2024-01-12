@@ -3,6 +3,7 @@ import { personalDetails } from "../../../data/Resume";
 import PersonalDetails from "@/components/PersonalDetails";
 import Summary from "@/components/Summary";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const Resume = () => {
   return (
@@ -19,6 +20,7 @@ const Resume = () => {
       </div>
       <Summary/>
       <Skills/>
+      <Experience/>
     </div>
   );
 };
