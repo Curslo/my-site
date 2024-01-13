@@ -17,7 +17,7 @@ const Skills = () => {
     <div>
       <h1 className="my-3 text-xl font-bold tracking-wide">Skills Acquired</h1>
       <div className="grid md:grid-cols-2 gap-4">
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Languages</h1>
           <div>
             {languages.map((lang) => (
@@ -25,7 +25,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Frontend</h1>
           <div>
             {frontend.map((fron) => (
@@ -33,7 +33,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Backend</h1>
           <div>
             {backend.map((back) => (
@@ -41,7 +41,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Version Control</h1>
           <div>
             {versionControl.map((back) => (
@@ -49,7 +49,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">DataBase</h1>
           <div>
             {database.map((back) => (
@@ -57,7 +57,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Package Manager</h1>
           <div>
             {packageManager.map((back) => (
@@ -65,7 +65,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Testing</h1>
           <div>
             {testing.map((back) => (
@@ -73,7 +73,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">Deployment</h1>
           <div>
             {deployment.map((back) => (
@@ -81,7 +81,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="bg-gray-200 p-2">
+        <div className="bg-gray-200 p-2 rounded-md dark:bg-gray-900">
           <h1 className="font-bold">APIs</h1>
           <div>
             {apis.map((back) => (

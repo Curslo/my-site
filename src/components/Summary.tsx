@@ -6,7 +6,7 @@ const Summary = () => {
       <h1 className="my-3 text-xl font-bold tracking-wide">
         About Richard Kisivii
       </h1>
-      <div className=" bg-gray-200 rounded-md p-2">
+      <div className=" bg-gray-200 dark:bg-gray-900 rounded-md p-2">
         <p>
           I am an Enthusiastic and results-driven Full-stack Web Developer with
           2 years of experience creating and implementing innovative web

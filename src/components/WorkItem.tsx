@@ -23,7 +23,7 @@ const WorkItem: FunctionComponent<{ work: IExperience }> = ({
         <p className="font-bold">{endDate}</p>
       </div>
       <div>
-        <h2 className="my-3 p-2 rounded-md font-bold tracking-wide bg-gray-400">Job Responsibilities</h2>
+        <h2 className="my-3 p-2 dark:bg-black rounded-md font-bold tracking-wide bg-gray-400">Job Responsibilities</h2>
         <p dangerouslySetInnerHTML={{ __html: responsibilities }} />
       </div>
     </div>

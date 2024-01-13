@@ -12,7 +12,7 @@ export default function Home() {
         responsibilities:
       </h5>
       <div
-        className="p-4 mt-5 bg-gray-400 flex-grow"
+        className="p-4 mt-5 bg-gray-400 dark:bg-black flex-grow"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h1 className="my-3 text-xl font-bold tracking-wide">
@@ -23,7 +23,7 @@ export default function Home() {
             // eslint-disable-next-line react/jsx-key
             <div
               key={service.id}
-              className="lg:col-span-2 bg-gray-200 rounded-md"
+              className="lg:col-span-2 bg-gray-200 dark:bg-gray-900 rounded-md"
             >
               <ServiceCard service={service} />
             </div>

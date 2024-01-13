@@ -33,7 +33,7 @@ export function NavBar() {
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="font-bold text-green-500 text-xl border-b-4 border-green-500 md:text-2xl">
+      <span className="font-bold text-green-500 text-xl border-b-4 border-green-700 md:text-2xl">
         {activeItem}
       </span>
       <div className="text-red-500 text-lg space-x-5 flex">
