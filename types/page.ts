@@ -17,7 +17,7 @@ export interface ISkill {
   id: number;
   title: string;
   level: string;
-  Icon:IconType
+  Icon: IconType;
 }
 
 export interface IExperience {
@@ -28,3 +28,29 @@ export interface IExperience {
   endDate: string;
   responsibilities: string;
 }
+
+export interface IProjects {
+  id: number;
+  name: string;
+  description: string;
+  imagePath: string;
+  deployedUrl: string;
+  githubUrl: string;
+  category: Category[];
+  technology: Category[]
+}
+
+export type Category =
+  | "Javascript"
+  | "CSS"
+  | "HTML"
+  | "React.js"
+  | "Next.js"
+  | "Node.js"
+  | "Express.js"
+  | "Nest.js"
+  | "Mongodb"
+  | "SQL"
+  | "Firebase"
+  | "Typescript"
+  | "Tailwind CSS";
