@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
 
     <html lang="en">
-        <body className="grid grid-cols-12 dark:text-white bg-gradient-to-r dark:from-gray-900 dark:to-gray-900 from-green-500 to-blue-400 gap-6 my-14 px-4 sm:px-20 md:px-48 lg:px-10">
+        <body className="grid grid-cols-12 dark:text-white bg-gradient-to-r dark:from-gray-900 dark:to-gray-900 from-green-500 to-blue-400 gap-6 my-14 px-2 sm:px-20 md:px-48 lg:px-10">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="p-4 text-center dark:bg-black rounded-2xl col-span-12 lg:col-span-3 bg-white">
             <SideBar />

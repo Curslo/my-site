@@ -26,10 +26,14 @@ export function SideBar() {
   }
   return (
     <div>
-      <img
+      <Image
+      width={128}
+      height={128}
+      layout="intrinsic"
         src="/Avatar.jpeg"
         alt="Richard Kisivii"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        quality={100}
       />
       <h1 className="font-kaushan my-4 text-3xl font-medium tracking-wider">
         <span className="text-green-500">Richard </span>Kisivii

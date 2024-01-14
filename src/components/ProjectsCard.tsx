@@ -4,6 +4,7 @@ import React, { FunctionComponent, useState } from "react";
 import { IProjects } from "../../types/page";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import Image from "next/image";
 
 const ProjectsCard: FunctionComponent<{ project: IProjects }> = ({
   project: {
@@ -20,16 +21,32 @@ const ProjectsCard: FunctionComponent<{ project: IProjects }> = ({
 
   return (
     <div>
-      <img
+      <Image
         src={imagePath}
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetails(true)}
+        width={300}
+        height={150}
+        layout="responsive"
       />
+      {/* <img
+        src={imagePath}
+        alt={name}
+        className="cursor-pointer"
+        onClick={() => setShowDetails(true)}
+      /> */}
       <p className="my-2 text-center">{name}</p>
       {showDetails && (
         <div className="p-2 grid md:grid-cols-2 absolute top-0 left-0 z-10 h-auto w-full gap-x-12 bg-gray-200 text-black dark:bg-gray-900 dark:text-white">
-          <img src={imagePath} alt={name} />
+          <Image
+            src={imagePath}
+            alt={name}
+            width={300}
+            height={150}
+            layout="responsive"
+          />
+          {/* <img src={imagePath} alt={name} /> */}
           <div className="flex justify-center my-4 space-x-3">
             <a
               href={githubUrl}
