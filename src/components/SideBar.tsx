@@ -25,11 +25,11 @@ export function SideBar() {
     return null;
   }
   return (
-    <div>
+    <div className="h-screen sticky top-0">
       <Image
-      width={128}
-      height={128}
-      layout="intrinsic"
+        width={128}
+        height={128}
+        layout="intrinsic"
         src="/Avatar.jpeg"
         alt="Richard Kisivii"
         className="mx-auto rounded-full"
@@ -41,23 +41,24 @@ export function SideBar() {
       <p className="px-2 py-1 my-3 bg-gray-200  dark:bg-gray-900 rounded-full">
         Fullstack Web Developer
       </p>
-      <a className="px-2 py-1 my-3 flex items-center justify-center bg-gray-200  dark:bg-gray-900 rounded-full">
+      <a
+        className="px-2 py-1 my-3 flex items-center justify-center bg-gray-200  dark:bg-gray-900 rounded-full"
+        href="/assets/Black White Minimalist CV Resume.pdf"
+        download={"Richard Kisivii"}
+      >
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
       {/* Social Icons */}
       <div className="flex justify-around w-9/12 my-5 text-green-500 md:w-full mx-auto">
-        <a href="">
+        <a href="https://github.com/Curslo">
           <FaGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
-          <FaFacebook className="w-8 h-8 cursor-pointer" />
+        <a href="https://www.linkedin.com/in/richard-kisivii-2ab621210/">
+          <FaLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
         <a href=" https://wa.me/0742132564">
           <FaWhatsapp className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="">
-          <FaInstagram className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
 

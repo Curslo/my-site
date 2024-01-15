@@ -19,6 +19,7 @@ const filterCategory = (category: Category | 'All') => {
   setProjects(newArray);
   setActive(category)
 }
+const [showDetails, setShowDetails] = useState<number | null>(null);
 
   return (
     <div className='px-5 py-2 overflow-y-scroll' style={{height:'65vw'}}>
@@ -27,7 +28,7 @@ const filterCategory = (category: Category | 'All') => {
         {/* List of Projects done */}
         {projects.map((project) => (
           <div className='col-span-12 bg-gray-200 dark:bg-gray-900 rounded-lg sm:col-span-6 lg:col-span-4 p-2' key={project.id}>
-            <ProjectsCard project = {project}/>
+            <ProjectsCard showDetails= {showDetails} setShowDetails= {setShowDetails} project = {project}/>
           </div>
         ))}
       </div>

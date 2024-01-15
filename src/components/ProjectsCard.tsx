@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
 
-const ProjectsCard: FunctionComponent<{ project: IProjects }> = ({
+const ProjectsCard: FunctionComponent<{ project: IProjects, showDetails: number | null, setShowDetails: (id: null | number) => void }> = ({
   project: {
     category,
     deployedUrl,
@@ -15,17 +15,18 @@ const ProjectsCard: FunctionComponent<{ project: IProjects }> = ({
     imagePath,
     name,
     technology,
+    id
   },
+  showDetails,
+  setShowDetails
 }) => {
-  const [showDetails, setShowDetails] = useState(false);
-
   return (
     <div>
       <Image
         src={imagePath}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowDetails(true)}
+        onClick={() => setShowDetails(id)}
         width={300}
         height={150}
         layout="responsive"
@@ -37,14 +38,15 @@ const ProjectsCard: FunctionComponent<{ project: IProjects }> = ({
         onClick={() => setShowDetails(true)}
       /> */}
       <p className="my-2 text-center">{name}</p>
-      {showDetails && (
-        <div className="p-2 grid md:grid-cols-2 absolute top-0 left-0 z-10 h-auto w-full gap-x-12 bg-gray-200 text-black dark:bg-gray-900 dark:text-white">
+      {showDetails === id && (
+        <div className="p-2 rounded-lg md:p-10 grid md:grid-cols-2 absolute top-0 left-0 z-10 h-auto w-full gap-x-12 bg-gray-200 text-black dark:bg-gray-900 dark:text-white">
           <Image
             src={imagePath}
             alt={name}
             width={300}
             height={150}
             layout="responsive"
+            className="border-4 border-gray-100"
           />
           {/* <img src={imagePath} alt={name} /> */}
           <div className="flex justify-center my-4 space-x-3">
@@ -75,7 +77,7 @@ const ProjectsCard: FunctionComponent<{ project: IProjects }> = ({
               ))}
             </div>
             <button
-              onClick={() => setShowDetails(false)}
+              onClick={() => setShowDetails(null)}
               className="absolute p-1 bg-gray-400 rounded-full top-3 right-3 focus:outline-none dark:bg-black"
             >
               <MdClose size={30} />
