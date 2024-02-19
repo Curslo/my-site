@@ -4,11 +4,20 @@ export const projects:IProjects[] = [
     {
         id: 1,
         name: 'My Portfolio',
-        category: ["Next.js"],
+        category: ["Next.js", "Typescript", "Tailwind CSS", "Node.js"],
         imagePath: '/portfolio.png',
         technology: ["Next.js", "Node.js", "Typescript", "Tailwind CSS"],
         description: 'This is my Personal Porfolio website that showcases all of my projects and qualifications.',
         deployedUrl: ' My Portfolio url',
-        githubUrl: 'Github Url'
+        githubUrl: 'https://github.com/Curslo/my-site'
+    },     {
+        id: 2,
+        name: 'Weather App',
+        category: ["Javascript", "CSS", "HTML"],
+        imagePath: '/assets/wapp2.png',
+        technology: ["Javascript", "CSS", "HTML"],
+        description: 'This is a Weather web App that tell you the weather conditions on a specific city.',
+        deployedUrl: 'https://weather-app-omega-rouge-91.vercel.app/',
+        githubUrl: 'https://github.com/Curslo/weather-app'
     }
 ]
