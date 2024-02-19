@@ -8,7 +8,7 @@ export const projects:IProjects[] = [
         imagePath: '/portfolio.png',
         technology: ["Next.js", "Node.js", "Typescript", "Tailwind CSS"],
         description: 'This is my Personal Porfolio website that showcases all of my projects and qualifications.',
-        deployedUrl: ' My Portfolio url',
+        deployedUrl: 'https://my-site-4p9knm5um-richard-kisiviis-projects.vercel.app/',
         githubUrl: 'https://github.com/Curslo/my-site'
     },     {
         id: 2,
