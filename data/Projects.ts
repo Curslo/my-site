@@ -17,7 +17,7 @@ export const projects: IProjects[] = [
     id: 2,
     name: "Weather App",
     category: ["Javascript", "CSS", "HTML"],
-    imagePath: "/assets/wapp2.png",
+    imagePath: "/assets/weather app.png",
     technology: ["Javascript", "CSS", "HTML"],
     description:
       "This is a Weather web App that tell you the weather conditions on a specific city.",
