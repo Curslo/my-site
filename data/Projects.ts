@@ -35,4 +35,15 @@ export const projects: IProjects[] = [
     deployedUrl: "https://todo-list-app-seven-phi.vercel.app/",
     githubUrl: "https://github.com/Curslo/todo-list-app",
   },
+  {
+    id: 4,
+    name: "Simple Quiz App",
+    category: ["Javascript", "CSS", "HTML"],
+    imagePath: "/assets/quiz app.png",
+    technology: ["Javascript", "CSS", "HTML"],
+    description:
+      "This is a Simple Quiz App that has questions and the answer is determined by the Quiz app after the user has selected the desired answer..",
+    deployedUrl: "https://quiz-app-liart-rho.vercel.app/",
+    githubUrl: "https://github.com/Curslo/quiz-app",
+  },
 ];
