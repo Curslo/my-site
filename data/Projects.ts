@@ -46,4 +46,15 @@ export const projects: IProjects[] = [
     deployedUrl: "https://quiz-app-liart-rho.vercel.app/",
     githubUrl: "https://github.com/Curslo/quiz-app",
   },
+  {
+    id: 5,
+    name: "Simple Calculator App",
+    category: ["Javascript", "CSS", "HTML"],
+    imagePath: "/assets/calculator app.png",
+    technology: ["Javascript", "CSS", "HTML"],
+    description:
+      "AThis is a calculator app that does all the basic functionality a normal calculator can perfom.",
+    deployedUrl: "https://calculator-app-three-bay.vercel.app/",
+    githubUrl: "https://github.com/Curslo/calculator-app",
+  },
 ];
