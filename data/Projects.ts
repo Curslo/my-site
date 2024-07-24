@@ -53,8 +53,19 @@ export const projects: IProjects[] = [
     imagePath: "/assets/calculator app.png",
     technology: ["Javascript", "CSS", "HTML"],
     description:
-      "AThis is a calculator app that does all the basic functionality a normal calculator can perfom.",
+      "This is a calculator app that does all the basic functionality a normal calculator can perfom.",
     deployedUrl: "https://calculator-app-three-bay.vercel.app/",
     githubUrl: "https://github.com/Curslo/calculator-app",
+  },
+  {
+    id: 6,
+    name: "Random Password Generator App",
+    category: ["Javascript", "CSS", "HTML"],
+    imagePath: "/assets/password.png",
+    technology: ["Javascript", "CSS", "HTML"],
+    description:
+      "AThis is an app thet generates secure random passwords with a mixture of uppercase, lowercase, numbers and special characters with a password length of 12 characters",
+    deployedUrl: "https://random-password-seven.vercel.app/",
+    githubUrl: "https://github.com/Curslo/new-password-generator",
   },
 ];
