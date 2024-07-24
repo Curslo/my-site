@@ -64,7 +64,7 @@ export const projects: IProjects[] = [
     imagePath: "/assets/password.png",
     technology: ["Javascript", "CSS", "HTML"],
     description:
-      "AThis is an app thet generates secure random passwords with a mixture of uppercase, lowercase, numbers and special characters with a password length of 12 characters",
+      "This is an app thet generates secure random passwords with a mixture of uppercase, lowercase, numbers and special characters with a password length of 12 characters",
     deployedUrl: "https://random-password-seven.vercel.app/",
     githubUrl: "https://github.com/Curslo/new-password-generator",
   },
