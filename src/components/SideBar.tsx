@@ -30,7 +30,7 @@ export function SideBar() {
         width={128}
         height={128}
         layout="intrinsic"
-        src="/assets/rich.jpg"
+        src="/assets/Richard.png"
         alt="Richard Kisivii"
         className="mx-auto rounded-full"
         quality={100}
