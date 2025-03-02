@@ -68,4 +68,15 @@ export const projects: IProjects[] = [
     deployedUrl: "https://random-password-seven.vercel.app/",
     githubUrl: "https://github.com/Curslo/new-password-generator",
   },
+  {
+    id: 7,
+    name: "Free Code Camp Survey Form",
+    category: ["Javascript", "CSS", "HTML"],
+    imagePath: "/assets/Survay form.png",
+    technology: ["Javascript", "CSS", "HTML"],
+    description:
+      "This is a survey form from Free Code Camp, one of the Certification projects on responsive web apps.",
+    deployedUrl: "https://freecodecamp-survey-form-ten.vercel.app/",
+    githubUrl: "https://github.com/Curslo/survey-form",
+  },
 ];
