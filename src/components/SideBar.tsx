@@ -3,12 +3,9 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import {
-  FaFacebookF,
   FaGithub,
   FaLinkedin,
   FaWhatsapp,
-  FaInstagram,
-  FaFacebook,
 } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
@@ -43,7 +40,7 @@ export function SideBar() {
       </p>
       <a
         className="px-2 py-1 my-3 flex items-center justify-center bg-gray-200  dark:bg-gray-900 rounded-full"
-        href="/assets/Black White Minimalist CV Resume.pdf"
+        href="/assets/My Software Development Resume.pdf"
         download={"Richard Kisivii"}
       >
         <GiTie className="w-6 h-6" />
@@ -72,7 +69,7 @@ export function SideBar() {
           <p>Nairobi, Kenya</p>
         </div>
         <p className="my-2">richardkisivii@gmail.com</p>
-        <p className="my-2">0742132564</p>
+        <p className="my-2">+254742132564</p>
       </div>
 
       {/* Buttons */}
