@@ -71,12 +71,23 @@ export const projects: IProjects[] = [
   {
     id: 7,
     name: "Free Code Camp Survey Form",
-    category: ["Javascript", "CSS", "HTML"],
+    category: ["CSS", "HTML"],
     imagePath: "/assets/Survay form.png",
-    technology: ["Javascript", "CSS", "HTML"],
+    technology: ["CSS", "HTML"],
     description:
       "This is a survey form from Free Code Camp, one of the Certification projects on responsive web apps.",
     deployedUrl: "https://freecodecamp-survey-form-ten.vercel.app/",
     githubUrl: "https://github.com/Curslo/survey-form",
+  },
+  {
+    id: 8,
+    name: "Free Code Camp Tribute Page",
+    category: ["CSS", "HTML"],
+    imagePath: "/assets/Tribute Page.png",
+    technology: ["CSS", "HTML"],
+    description:
+      "This is a tribute page from Free Code Camp, one of the Certification projects on responsive web apps.",
+    deployedUrl: "https://tribute-page-tawny-ten.vercel.app/",
+    githubUrl: "https://github.com/Curslo/tribute-page",
   },
 ];
