@@ -1,12 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss' source('../');
 
-::-webkit-scrollbar-thumb {
-  background-color: linear-gradient(to right bottom, green, blue);
-}
+@import '@fontsource-variable/dm-sans'; /* [!code ++] */
+@import '@fontsource-variable/jetbrains-mono'; /* [!code ++] */
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 0px;
+@theme inline {
+  --font-sans: 'DM Sans Variable', sans-serif; /* [!code ++] */
+  --font-mono: 'JetBrains Mono Variable', monospace; /* [!code ++] */
+  /* ... */
 }

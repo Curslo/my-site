@@ -1,11 +1,16 @@
 import React from "react";
-import { personalDetails } from "../../../data/Resume";
+import { personalDetails } from "../../data/Resume";
 import PersonalDetails from "@/components/PersonalDetails";
 import Summary from "@/components/Summary";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import { createFileRoute } from "@tanstack/react-router";
 
-const Resume = () => {
+export const Route = createFileRoute('/resume')({
+  component: Resume,
+ }) 
+
+function Resume() {
   return (
     <div className="p-4 mt-5 bg-gray-400 dark:bg-black flex-grow">
       <h1 className="my-3 text-xl font-bold tracking-wide">
@@ -24,5 +29,3 @@ const Resume = () => {
     </div>
   );
 };
-
-export default Resume;

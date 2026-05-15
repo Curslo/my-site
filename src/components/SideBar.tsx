@@ -1,14 +1,7 @@
-"use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaWhatsapp,
-} from "react-icons/fa";
-import { GoLocation } from "react-icons/go";
-import { GiTie } from "react-icons/gi";
+import { ShieldPlus, MapPin, Computer, Link, LayoutGrid } from "lucide-react";
 
 export function SideBar() {
   const [mounted, setMounted] = useState(false);
@@ -42,19 +35,19 @@ export function SideBar() {
         href="/assets/Richard Kisivii Resume.pdf"
         download={"Richard Kisivii"}
       >
-        <GiTie className="w-6 h-6" />
+        <ShieldPlus className="w-6 h-6" />
         Download Resume
       </a>
       {/* Social Icons */}
       <div className="flex justify-around w-9/12 my-5 text-green-500 md:w-full mx-auto">
         <a href="https://github.com/Curslo">
-          <FaGithub className="w-8 h-8 cursor-pointer" />
+          <Computer className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="https://www.linkedin.com/in/richard-kisivii-2ab621210/">
-          <FaLinkedin className="w-8 h-8 cursor-pointer" />
+          <Link className="w-8 h-8 cursor-pointer" />
         </a>
         <a href=" https://wa.me/0742132564">
-          <FaWhatsapp className="w-8 h-8 cursor-pointer" />
+          <LayoutGrid className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
 
@@ -64,7 +57,7 @@ export function SideBar() {
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
-          <GoLocation />
+          <MapPin />
           <p>Nairobi, Kenya</p>
         </div>
         <p className="my-2">richardkisivii@gmail.com</p>

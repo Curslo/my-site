@@ -1,8 +1,12 @@
-import Image from "next/image";
+import { createFileRoute } from '@tanstack/react-router'
 import { Services } from "../../data/About";
 import ServiceCard from "@/components/ServiceCard";
 
-export default function Home() {
+export const Route = createFileRoute('/')({
+  component: Home,
+ }) 
+
+function Home() {
   return (
     <div className="flex flex-col px-6 pt-1 flex-grow">
       <h5 className="my-3 font-medium">
@@ -20,7 +24,6 @@ export default function Home() {
         </h1>
         <div className="grid gap-4 lg:grid-cols-4">
           {Services.map((service) => (
-            // eslint-disable-next-line react/jsx-key
             <div
               key={service.id}
               className="lg:col-span-2 bg-gray-200 dark:bg-gray-900 rounded-md"

@@ -1,11 +1,15 @@
-"use client"
-
 import React, { useState } from 'react'
 import ProjectsNavBar from '@/components/ProjectsNavBar'
 import ProjectsCard from '@/components/ProjectsCard'
-import { projects as ProjectData } from '../../../data/Projects'
-import { Category } from '../../../types/page'
-const Projects = () => {
+import { projects as ProjectData } from '../../data/Projects'
+import { Category } from '../../types/page'
+import { createFileRoute } from '@tanstack/react-router'
+
+export const Route = createFileRoute('/projects')({
+  component: Projects,
+ }) 
+
+function Projects() {
 
 const [projects, setProjects] = useState(ProjectData);
 const [active, setActive] = useState('All');
@@ -35,5 +39,3 @@ const [showDetails, setShowDetails] = useState<number | null>(null);
     </div>
   )
 }
-
-export default Projects
