@@ -26,7 +26,6 @@ export function SideBar() {
       <Image
         width={128}
         height={128}
-        layout="intrinsic"
         src="/assets/Richard.png"
         alt="Richard Kisivii"
         className="mx-auto rounded-full"
@@ -40,7 +39,7 @@ export function SideBar() {
       </p>
       <a
         className="px-2 py-1 my-3 flex items-center justify-center bg-gray-200  dark:bg-gray-900 rounded-full"
-        href="/assets/My Software Development Resume.pdf"
+        href="/assets/Richard Kisivii Resume.pdf"
         download={"Richard Kisivii"}
       >
         <GiTie className="w-6 h-6" />
