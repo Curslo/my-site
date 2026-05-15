@@ -29,7 +29,6 @@ const ProjectsCard: FunctionComponent<{ project: IProjects, showDetails: number 
         onClick={() => setShowDetails(id)}
         width={300}
         height={150}
-        layout="responsive"
       />
       {/* <img
         src={imagePath}
@@ -45,7 +44,6 @@ const ProjectsCard: FunctionComponent<{ project: IProjects, showDetails: number 
             alt={name}
             width={300}
             height={150}
-            layout="responsive"
             className="border-4 border-gray-100"
           />
           {/* <img src={imagePath} alt={name} /> */}

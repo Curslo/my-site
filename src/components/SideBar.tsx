@@ -26,7 +26,6 @@ export function SideBar() {
       <Image
         width={128}
         height={128}
-        layout="intrinsic"
         src="/assets/Richard.png"
         alt="Richard Kisivii"
         className="mx-auto rounded-full"
